@@ -1,7 +1,2 @@
-.eslintrc.js
 README.md
-data
 node_modules
-package-lock.json
-package.json
-webpack.config.js
