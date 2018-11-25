@@ -1,0 +1,17 @@
+diff --git a/tests/count.test.js b/tests/count.test.js
+index f339ee1..7b608af 100644
+--- a/tests/count.test.js
++++ b/tests/count.test.js
+@@ -34,6 +34,7 @@ describe('counter', function () {
+         setTimeout(function () {
+             expect(nums.length > 1).to.be.ok;
+             expect(nums.length < 5).to.be.ok;
++            done();
+         }, 200);
+ 
+         setTimeout(function () {
+@@ -60,4 +61,3 @@ describe('counter', function () {
+         }, 550);
+     });
+ });
+-

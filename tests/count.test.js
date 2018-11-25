@@ -34,6 +34,7 @@ describe('counter', function () {
         setTimeout(function () {
             expect(nums.length > 1).to.be.ok;
             expect(nums.length < 5).to.be.ok;
+            done();
         }, 200);
 
         setTimeout(function () {
@@ -60,4 +61,3 @@ describe('counter', function () {
         }, 550);
     });
 });
-
