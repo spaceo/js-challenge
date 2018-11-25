@@ -5,12 +5,10 @@ module.exports = {
 
         const counter =  {
             count: setInterval(() => {
-                if (current > end) {
-                    clearInterval(this.count);
-                    return;
+                if (current <= end) {
+                    console.log(current);
+                    current++;
                 }
-                console.warn(current);
-                current++;
             }, 100),
             cancel: () => {
                 clearInterval(this.count);
@@ -19,5 +17,7 @@ module.exports = {
 
         counter.count;
         return counter;
+
+
     }
 };
