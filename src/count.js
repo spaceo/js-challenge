@@ -9,7 +9,7 @@ module.exports = {
                     clearInterval(this.count);
                     return;
                 }
-                console.log(current);
+                console.warn(current);
                 current++;
             }, 100),
             cancel: () => {
